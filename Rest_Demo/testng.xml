@@ -61,8 +61,8 @@
             </class>
         </classes>
     </test>-->
-    <test name="StoreTest">
-        <classes>
+<!--    <test name="StoreTest">-->
+<!--        <classes>-->
             <!--<class name="com.petstore.test.store.DeleteStoreOrder">
                 <methods>
                     <include name="getStoreInventory"/>
@@ -73,48 +73,48 @@
                     <include name="getStoreInventory"/>
                 </methods>
             </class>-->
-            <class name="com.petstore.test.store.create_order.SendRequestTest">
-                <methods>
-                    <include name="sendRequestBody_ValidOrder"/>
-                    <include name="sendRequestBody_AllNull"/>
-                    <include name="sendRequestBodyWithId_NULL"/>
-                    <include name="sendRequestBodyWithId_String"/>
-                </methods>
-            </class>
-            <class name="com.petstore.test.store.get_order.ReturningStatusCodeTest">
-                <methods>
-                    <include name="whenSendingFindOrderRequest_ShouldReturn200"/>
-                    <include name="whenSendingFindOrderRequest_ShouldReturn404"/>
-                    <include name="whenSendingFindOrderRequest_ShouldReturn400"/>
-                    <include name="whenSendingFindOrderRequest_ShouldReturn405"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <!--<test name="UserTest">
+<!--            <class name="com.petstore.test.store.create_order.SendRequestTest">-->
+<!--                <methods>-->
+<!--                    <include name="sendRequestBody_ValidOrder"/>-->
+<!--                    <include name="sendRequestBody_AllNull"/>-->
+<!--                    <include name="sendRequestBodyWithId_NULL"/>-->
+<!--                    <include name="sendRequestBodyWithId_String"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.petstore.test.store.get_order.ReturningStatusCodeTest">-->
+<!--                <methods>-->
+<!--                    <include name="whenSendingFindOrderRequest_ShouldReturn200"/>-->
+<!--                    <include name="whenSendingFindOrderRequest_ShouldReturn404"/>-->
+<!--                    <include name="whenSendingFindOrderRequest_ShouldReturn400"/>-->
+<!--                    <include name="whenSendingFindOrderRequest_ShouldReturn405"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="UserTest">
         <classes>
-            <class name="com.petstore.test.user.ApiLoginTest">
-                <methods>
-                    <include name="checkLoginStatusCode"/>
-                </methods>
-            </class>
-            <class name="com.petstore.test.user.ApiLogoutTest">
-                <methods>
-                    <include name="checkLogout"/>
-                </methods>
-            </class>
-            <class name="com.petstore.test.user.ApiPostAndGetTest">
-                <methods>
-                    <include name="checkCreateUser"/>
-                    <include name="checkGetUserByUserName"/>
-                </methods>
-            </class>
-            <class name="com.petstore.test.user.ApiTestWithIncorrectData">
-                <methods>
-                    <include name="checkCreateUserWithIncorrectId"/>
-                    <include name="checkGetUserByIncorrectUserName"/>
-                </methods>
-            </class>
+<!--            <class name="com.petstore.test.user.ApiLoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="checkLoginStatusCode"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.petstore.test.user.ApiLogoutTest">-->
+<!--                <methods>-->
+<!--                    <include name="checkLogout"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.petstore.test.user.ApiPostAndGetTest">-->
+<!--                <methods>-->
+<!--                    <include name="checkCreateUser"/>-->
+<!--                    <include name="checkGetUserByUserName"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.petstore.test.user.ApiTestWithIncorrectData">-->
+<!--                <methods>-->
+<!--                    <include name="checkCreateUserWithIncorrectId"/>-->
+<!--                    <include name="checkGetUserByIncorrectUserName"/>-->
+<!--                </methods>-->
+<!--            </class>-->
             <class name="com.petstore.test.user.ResponseUser">
                 <methods>
                     <include name="postCreateNewUser"/>
@@ -127,5 +127,5 @@
                 </methods>
             </class>
         </classes>
-    </test>-->
+    </test>
 </suite>

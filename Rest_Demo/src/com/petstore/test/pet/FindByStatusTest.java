@@ -1,4 +1,5 @@
 package com.petstore.test.pet;
+import com.petstore.data.ConstantVariables;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
@@ -14,7 +15,7 @@ import static io.restassured.RestAssured.given;
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 
 public class FindByStatusTest {
-    public static final String URI = "http://40.68.47.68:9001";
+    public static final String URI = ConstantVariables.API_URL + ConstantVariables.PORT;
 
     @Test
     void testContentType() {
