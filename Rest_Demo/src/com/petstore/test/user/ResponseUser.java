@@ -19,7 +19,7 @@ public class ResponseUser {
     @BeforeClass
     public void setup() {
         RequestSpecification requestSpec = new RequestSpecBuilder()
-                .setBaseUri("http://18.216.169.172")
+                .setBaseUri("http://3.21.162.133")
                 .setPort(9000)
                 .setBasePath("api/v3")
                 .setAccept(ContentType.JSON)
