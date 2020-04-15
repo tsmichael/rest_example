@@ -1,5 +1,6 @@
 package com.petstore.test.user;
 
+import com.petstore.data.ConstantVariables;
 import com.petstore.data.Userio;
 import com.petstore.data.UserioRepository;
 import io.restassured.RestAssured;
