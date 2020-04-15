@@ -15,8 +15,8 @@ import static io.restassured.RestAssured.given;
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 
 public class FindByStatusTest {
-    public static final String URI = ConstantVariables.API_URL + ConstantVariables.PORT;
 
+    public static final String URI = "lolonet";
     @Test
     void testContentType() {
         RestAssured.baseURI = URI;
