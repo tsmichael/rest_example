@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Api">
+    <test name="UserTest">
+        <classes>
+            <class name="com.petstore.test.user.ResponseUser">
+                <methods>
+                    <include name="postCreateNewUser"/>
+                    <include name="getCreatedUser"/>
+                    <include name="putUpdateCorrectUser"/>
+                    <include name="getNonExistUser"/>
+                    <include name="getEditedUser"/>
+                    <include name="deleteCurrentUser"/>
+                    <include name="getDeletedUser"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.pet.NewPetTest">
+                <methods>
+                    <include name="smokeAddPet"/>
+                    <include name="addEmptyPet"/>
+                    <include name="addPetWithoutID"/>
+                    <include name="addPetWithIDOnly"/>
+                    <include name="addPetWithStringID"/>
+                    <include name="addPetWithDigitName"/>
+                    <include name="addPetWithoutCategoryID"/>
+                    <include name="addPetWithStringCategoryID"/>
+                    <include name="addPetWithoutCategoryName"/>
+                    <include name="addPetWithDigitCategoryName"/>
+                    <include name="addPetWithManyPhotoUrls"/>
+                    <include name="addPetWithStringTagID"/>
+                    <include name="addPetWithManyTags"/>
+                    <include name="addPetWithNotExistedStatus"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.user.ApiLoginTest">
+                <methods>
+                    <include name="checkLoginStatusCode"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.user.ApiLogoutTest">
+                <methods>
+                    <include name="checkLogout"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.user.ApiPostAndGetTest">
+                <methods>
+                    <include name="checkCreateUser"/>
+                    <include name="checkGetUserByUserName"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.user.ApiTestWithIncorrectData">
+                <methods>
+                    <include name="checkCreateUserWithIncorrectId"/>
+                    <include name="checkGetUserByIncorrectUserName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="PetTest">
+        <classes>
+            <class name="com.petstore.test.pet.UpdateDeletePets">
+                <methods>
+                    <include name="checkPetById"/>
+                    <include name="updatePetData"/>
+                    <include name="updatePetDataWithNonExistingId"/>
+                    <include name="checkPetByNonExistingId"/>
+                    <include name="delete"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.pet.FindByStatusTest">
+                <methods>
+                    <include name="testContentType"/>
+                    <include name="checkAvailableStatus"/>
+                    <include name="checkPendingStatus"/>
+                    <include name="checkSoldStatus"/>
+                    <include name="checkEmptyStatus"/>
+                    <include name="checkIncorrectDataStatus"/>
+                    <include name="checkTooLongStatusdata"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.pet.FindByTagsTest">
+                <methods>
+                    <include name="checkBodyContainsTag"/>
+                    <include name="checkBodyContainsManyTags"/>
+                    <include name="checkBodyContainsManyTags"/>
+                    <include name="checkWithOneIncorrectTag"/>
+                    <include name="checkIcorrectDataTags"/>
+                    <include name="checkTooLongTagsData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="StoreTest">
+        <classes>
+            <class name="com.petstore.test.store.create_order.SendRequestTest">
+                <methods>
+                    <include name="sendRequestBody_ValidOrder"/>
+                    <include name="sendRequestBody_AllNull"/>
+                    <include name="sendRequestBodyWithId_NULL"/>
+                    <include name="sendRequestBodyWithId_String"/>
+                </methods>
+            </class>
+            <class name="com.petstore.test.store.get_order.ReturningStatusCodeTest">
+                <methods>
+                    <include name="whenSendingFindOrderRequest_ShouldReturn200"/>
+                    <include name="whenSendingFindOrderRequest_ShouldReturn404"/>
+                    <include name="whenSendingFindOrderRequest_ShouldReturn400"/>
+                    <include name="whenSendingFindOrderRequest_ShouldReturn405"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
